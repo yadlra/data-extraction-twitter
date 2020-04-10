@@ -101,3 +101,9 @@ hashtags = []
       if(hashtags_data != None):
         for i in range(len(hashtags_data)):
           hashtags.append(unidecode(hashtags_data[i]['text']))
+
+urls = []
+      urls_data = tweet.entities.get('urls', None)
+      if(urls_data != None):
+        for i in range(len(urls_data)):
+          urls.append(unidecode(urls_data[i]['url']))
