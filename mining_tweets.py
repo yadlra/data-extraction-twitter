@@ -119,3 +119,11 @@ media = []
       if(media_data != None):
         for i in range(len(media_data)):
           media_data.append(unidecode(media_data[i]['type']))
+
+          more_tweet_info = [', '.join(hashtags),
+                         len(hashtags),
+                         ', '.join(urls),
+                         len(urls),
+                         ', '.join(user_mentions),
+                         len(user_mentions),
+                         ', '.join(media)]
