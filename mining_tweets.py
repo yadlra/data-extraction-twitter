@@ -127,3 +127,6 @@ media = []
                          ', '.join(user_mentions),
                          len(user_mentions),
                          ', '.join(media)]
+
+    writer.writerow(user_info + tweet_info + more_tweet_info)
+    # Return a writer object responsible for converting the user’s data into delimited strings on the given file-like object
