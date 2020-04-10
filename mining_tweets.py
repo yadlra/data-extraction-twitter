@@ -95,3 +95,9 @@ with open('tweets.csv', 'wb') as file:
                     tweet.retweet_count,
                     tweet.favorite_count
                     ]
+
+hashtags = []
+      hashtags_data = tweet.entities.get('hashtags', None)
+      if(hashtags_data != None):
+        for i in range(len(hashtags_data)):
+          hashtags.append(unidecode(hashtags_data[i]['text']))
