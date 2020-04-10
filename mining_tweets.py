@@ -107,3 +107,9 @@ urls = []
       if(urls_data != None):
         for i in range(len(urls_data)):
           urls.append(unidecode(urls_data[i]['url']))
+
+  user_mentions = []
+      user_mentions_data = tweet.entities.get('media', None)
+      if(user_mentions != None):
+        for i in range(len(user_mentions)):
+          user_mentions.append(unidecode(user_mentions_data[i]['screen_name']))
