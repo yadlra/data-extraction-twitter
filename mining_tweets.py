@@ -76,3 +76,22 @@ with open('tweets.csv', 'wb') as file:
                  user_obj.geo_enabled,
                  user_obj.contributors_enabled
                  ]
+
+  for tweet in Cursor(api.user_timeline, screen_name = user).items(20):
+      direct_reply = True if tweet.in_reply_to_screen_name != "" else False
+      retweet_status = True if tweet.text[0:3] == "RT" else False
+
+      tweet_info = [tweet.created_at.year,
+                    tweet.created_at.month,
+                    tweet.created_at.day,
+                    tweet.created_at.hour,
+                    unidecode(tweet.text),
+                    lat,
+                    long,
+                    tweet.source,
+                    tweet.in_reply_to_screen_name,
+                    direct_reply,
+                    retweet_status,
+                    tweet.retweet_count,
+                    tweet.favorite_count
+                    ]
