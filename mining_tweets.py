@@ -57,3 +57,22 @@ with open('tweets.csv', 'wb') as file:
                      "tweet_user_mentions_count",
                      "tweet_media_type",
                      "tweet_contributors"])
+
+  for user in users:
+    user_obj = api.get_user(user)
+
+    user_info = [user_obj.name,
+                 user_obj.screen_name,
+                 user_obj.followers_count,
+                 user_obj.listed_count,
+                 user_obj.friends_count,
+                 user_obj.favourites_count,
+                 user_obj.verified,
+                 user_obj.default_profile,
+                 user_obj.location,
+                 user_obj.time_zone,
+                 user_obj.statuses_count,
+                 user_obj.description,
+                 user_obj.geo_enabled,
+                 user_obj.contributors_enabled
+                 ]
