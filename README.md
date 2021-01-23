@@ -1,4 +1,4 @@
-- social data science research in Mexico -> mining data
+- social data science research 
 
 ## Reflections
 
