@@ -1,5 +1,4 @@
 import tweepy
-from tweepy import Stream
 from tweepy import OAuthHandler
 from tweepy.streaming import StreamListener
 from tweepy import Cursor
@@ -9,7 +8,7 @@ import csv
 import unicodecsv
 from unidecode import unidecode
 import datetime
-import pandas
+
 
 access_token = " "
 access_token_secret = " "
