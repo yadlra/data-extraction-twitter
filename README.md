@@ -10,7 +10,9 @@ How the objetification of people's data ends up being that! Data... as an object
 
 Is there a way to make the collection of people's data fair/just? Should it even be a thing? 
 Data - ultimately people's ideas, thoughts, reflections, anger, frustrations, happiness, visions...their everyday life gets reduced to extractable information.
-How can anyone collecting data for any purpose, especially those of us that identify this "automatic" objectification in data extraction.
+How can anyone collecting data for any purpose, especially those of us that identify this "automatic" objectification in data extraction not just be aware of the extractive nature of this proces BUT take into account and make sure that we do everything to not mitigate biased data? 
+
+On that-> this project was extremely small scale, thus computational tools for identifying biased datasets was not necessary and finding a better representation of twitter data was not needed. 
 
 
 
